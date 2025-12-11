@@ -2,7 +2,7 @@
 // Load database credentials from environment file
 $env = require __DIR__ . '/../.env.php';
 
-const ROOT_DIR = '/';
+const ROOT_DIR = '/WebsiteTemplate/';
 const ICON_PATH = ROOT_DIR . 'images/logos/icon.png';
 const PAGES = [
     "index" => ["label" => "<i class='bi bi-house'></i> Home", "URL" => "index.php", "filename" => "index.php"],

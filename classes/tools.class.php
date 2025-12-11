@@ -1,20 +1,28 @@
 <?php
 require_once(__DIR__ . '/../config/constants.php');
 require_once(__DIR__ . '/user.class.php');
-require_once(__DIR__ . '/event.class.php');
 require_once(__DIR__ . '/../vendor/autoload.php');
 use Ramsey\Uuid\Uuid;
 class Tools{
+    /** Get a new database connection
+     * @return mysqli
+     */
     public static function getDB(): mysqli
     {
         return new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
     }
 
+    /** Sanitize user input
+     * @param string $input
+     * @return string
+     */
     public static function sanitizeInput(string $input): string {
         return htmlspecialchars(trim($input), ENT_QUOTES, 'UTF-8');
     }
 
-    /**
+    /** Get User object by public ID
+     * @param string $public_id
+     * @return User
      * @throws Exception
      */
     public static function getUserWithPublicId(string $public_id): User {
@@ -43,6 +51,10 @@ class Tools{
         return new User($fetched_id);
     }
 
+    /** Show message based on code
+     * @param int $code
+     * @return string
+     */
     public static function showMessage(int $code): string {
         $message = MESSAGE_CODES[$code] ?? "Unknown message code.";
         return "<div id='loginAlert' class='alert alert-danger' role='alert'>
@@ -59,11 +71,18 @@ class Tools{
         </script>";
     }
 
+    /** Generate a new public ID
+     * @return string
+     */
     public static function generatePublicId(): string {
         $uuid = Uuid::uuid4();
         return $uuid->getBytes();
     }
 
+    /** Rearrange the $_FILES array for multiple file uploads
+     * @param $attachFile
+     * @return array
+     */
     static function reArrayFiles($attachFile): array
     {
         $file_ary = array();
@@ -79,7 +98,10 @@ class Tools{
         return $file_ary;
     }
 
-    // Function to sanitize filename
+    /** Sanitize file name
+     * @param $fileName
+     * @return array|string|null
+     */
     static function sanitizeFileName($fileName): array|string|null
     {
         // Replace Scandic and special characters
@@ -96,67 +118,5 @@ class Tools{
         // Remove any remaining non-ASCII characters and multiple underscores
         $sanitized = preg_replace('/[^A-Za-z0-9._-]/', '_', $sanitized);
         return preg_replace('/_+/', '_', $sanitized);
-    }
-
-    /** Get all events and return an array of Event objects
-     * @return Event[]
-     * @throws Exception
-     */
-    static function getEvents(): array
-    {
-        $events = [];
-
-        $db = self::getDB();
-        $sql = "SELECT id FROM events WHERE is_published = 1 ORDER BY event_date DESC, event_time DESC";
-        $stmt = $db->prepare($sql);
-        /**
-         * @var int $event_id
-         */
-        $stmt->bind_result($event_id);
-        $stmt->execute();
-        $stmt->store_result();
-        if($stmt->num_rows > 0){
-            while($stmt->fetch()){
-                try{
-                    $events[] = new Event($event_id);
-                }
-                catch(Exception $e){
-                    // Log error but continue loading other events
-                    error_log("Error loading event with ID $event_id: " . $e->getMessage());
-                }
-            }
-        }
-        $stmt->close();
-        return $events;
-    }
-
-    /**
-     * @throws Exception
-     */
-    static function getEventWithPublicId(string $public_id): Event
-    {
-        $db = self::getDB();
-        $sql = "SELECT id FROM events WHERE public_id = ?";
-        $stmt = $db->prepare($sql);
-        $binary_public_id = Uuid::fromString($public_id)->getBytes();
-        $stmt->bind_param("s", $binary_public_id);
-        $stmt->execute();
-        $stmt->store_result();
-
-        if($stmt->num_rows === 0) {
-            $stmt->close();
-            throw new Exception("Event not found");
-        }
-
-        if($stmt->num_rows > 1) {
-            $stmt->close();
-            throw new Exception("Database integrity error");
-        }
-        /** @var int $fetched_id */
-        $stmt->bind_result($fetched_id);
-        $stmt->fetch();
-        $stmt->close();
-
-        return new Event($fetched_id);
     }
 }

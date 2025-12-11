@@ -29,6 +29,24 @@ The main navigation bar component used across all pages of the website.
 - From pages/: `../components/navbar.php`
 - From pages/admin/: `../../components/navbar.php`
 
+### footer.php
+The footer component displayed at the bottom of all pages.
+
+**Features:**
+- Copyright notice with dynamic year
+- Consistent styling across all pages
+- Primary brand color background
+
+**Usage:**
+```php
+<?php include_once '../components/footer.php'; ?>
+```
+
+**Note:** Adjust the path based on your file's location:
+- From root: `components/footer.php`
+- From pages/: `../components/footer.php`
+- From pages/admin/: `../../components/footer.php`
+
 ## Creating New Components
 
 When creating new components, follow these guidelines:
@@ -147,7 +165,6 @@ Components use Bootstrap Icons:
 ## Future Components
 
 Planned components for development:
-- `footer.php` - Site footer with funding information
 - `breadcrumb.php` - Breadcrumb navigation
 - `sidebar.php` - Admin sidebar navigation
 - `alert.php` - Reusable alert messages

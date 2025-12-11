@@ -22,19 +22,20 @@
         ?>
     </header>
     <main class="mb-5" role="main">
-        <div class="container-fluid">
-            <section id="main-content">
-                <p>
-                    CONTENT GOES HERE
-                </p>
-            </section>
-        </div>
+        <section is="headline">
+            <div class="col-12 col-lg-8 offset-lg-2 px-4 pt-5 pb-3 text-center">
+                <h1 class="display-4 fw-bold">Welcome!</h1>
+                <p class="lead fs-3 text-muted fw-semibold">[PROJECT]</p>
+            </div>
+        </section>
+        <hr>
+        <section id="content">
+            <div class="col-12 col-lg-8 offset-lg-2 px-4 py-5">
+                <p>CONTENT HERE</p>
+            </div>
+        </section>
     </main>
-    <footer class="bg-primary text-white text-center">
-        <div class="container p-3">
-            <p>FOOTER HERE</p>
-        </div>
-    </footer>
+    <?php include_once 'components/footer.php'; ?>
 </body>
 
 </html>

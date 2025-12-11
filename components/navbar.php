@@ -7,13 +7,13 @@ require_once(__DIR__ . '/../config/constants.php');
 $currentPage = basename($_SERVER['SCRIPT_NAME']);
 
 // Define navigation items (excluding login which goes on the right)
-$navItems = ['index', 'about', 'latest', 'contact'];
+$navItems = ['index', 'about', 'contact'];
 ?>
 
 <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
     <div class="container-fluid position-relative">
         <a id="brand" class="navbar-brand" href="<?php echo ROOT_DIR . PAGES['index']['URL']; ?>">
-            <img alt="[PROJECT] Icon" class="h-icon d-inline-block align-text-top" src="<?php echo ICON_PATH; ?>"> [PROJECT]
+            <img alt="[PROJECT] Icon" class="h-icon d-inline-block align-text-top" style="max-height: 50px;" src="<?php echo ICON_PATH; ?>"> [PROJECT]
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
