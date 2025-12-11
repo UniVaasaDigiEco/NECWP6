@@ -1,0 +1,21 @@
+{
+  "name": "innowind",
+  "version": "1.0.0",
+  "description": "Project website for InnoWind",
+  "license": "ISC",
+  "author": "Jyri Nieminen",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "sass css/scss/bs-custom.scss css/bs-custom.css --no-source-map",
+    "watch:css": "sass --watch css/scss:css --no-source-map"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "flatpickr": "^4.6.13",
+    "jquery": "^3.7.1",
+    "summernote": "^0.9.1"
+  }
+}

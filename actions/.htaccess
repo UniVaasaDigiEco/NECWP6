@@ -1,0 +1,9 @@
+# Disable directory listing
+Options -Indexes
+
+# Allow PHP files to be executed but deny direct access to other files
+<FilesMatch "\.(php)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
