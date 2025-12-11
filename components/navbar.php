@@ -13,7 +13,7 @@ $navItems = ['index', 'about', 'latest', 'contact'];
 <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
     <div class="container-fluid position-relative">
         <a id="brand" class="navbar-brand" href="<?php echo ROOT_DIR . PAGES['index']['URL']; ?>">
-            <img alt="Innowind Icon" class="h-icon d-inline-block align-text-top" src="<?php echo ICON_PATH; ?>"> InnoWind
+            <img alt="[PROJECT] Icon" class="h-icon d-inline-block align-text-top" src="<?php echo ICON_PATH; ?>"> [PROJECT]
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

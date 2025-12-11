@@ -1,34 +1,10 @@
-# InnoWind
+# [PROJECT] Website Template
 
-**Innovative Offshore Wind Power Infrastructure Service and Maintenance Business**
+**PHP Website Template with Admin Panel**
 
 ## Project Overview
 
-InnoWind is a web platform for a project aimed at developing an innovative service and maintenance business for offshore wind power. The project focuses on integrating cutting-edge satellite technology with sustainable power generation to revolutionize how we assess, design, and monitor wind resources in challenging maritime environments.
-
-## About the Project
-
-InnoWind pioneers the development of expertise in:
-- Utilizing satellite data for assessing wind resources and ice conditions
-- Designing cost-effective offshore wind farms
-- Real-time monitoring and predictive maintenance
-- AI-powered analysis of satellite and IoT data from wind turbines
-
-The project aims to optimize the efficiency, safety, and performance of wind power infrastructure while minimizing environmental impact.
-
-### Cooperation Partners
-- Etha Oy
-- Infra Pohjanmaa ry
-- Starsview Oy
-- EPV Energia Oy
-- OX2 Suomi Oy
-- Suomen Hyötytuuli Oy
-
-### Funding
-This project is co-funded by the European Union, with support from:
-- The Council of Ostrobothnia
-- University of Vaasa
-- Vaasa University of Applied Sciences
+This is a customizable PHP website template with an admin panel for managing content. It provides a foundation for building content-driven websites with news, articles, events, and more.
 
 ## Technology Stack
 
@@ -52,7 +28,7 @@ This project is co-funded by the European Union, with support from:
 ## Project Structure
 
 ```
-InnoWind/
+[PROJECT]/
 ├── index.php              # Homepage
 ├── pages/                 # Application pages
 │   ├── about.php         # About the project
@@ -104,7 +80,7 @@ InnoWind/
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd InnoWind
+   cd [PROJECT]
    ```
 
 2. **Install PHP dependencies**
@@ -126,10 +102,10 @@ InnoWind/
 5. **Configure web server**
    - Point document root to the project directory
    - Ensure PHP is enabled
-   - For XAMPP: Place in `htdocs/InnoWind`
+   - For XAMPP: Place in `htdocs/[PROJECT]`
 
 6. **Access the application**
-   - Navigate to `http://localhost/InnoWind/` in your browser
+   - Navigate to `http://localhost/[PROJECT]/` in your browser
 
 ## Features
 
@@ -183,22 +159,15 @@ sass --watch css/scss:css
 - XSS prevention
 
 ## Contributing
-This is a research project with specific cooperation partners. For inquiries about collaboration, please contact the project coordinator.
+Feel free to fork this template and customize it for your own projects. This is a starting point for building content-driven websites.
 
 ## License
-All rights reserved. This project is funded by the European Union and managed by the University of Vaasa and Vaasa University of Applied Sciences.
+This template is provided as-is. Customize and use as needed for your projects.
 
 ## Contact
-**Aino Koskinen**  
-Project Coordinator  
-University of Vaasa
-
-For detailed contact information, visit the Contact page on the website.
-
-## Acknowledgments
-This project is co-funded by the European Union and supported by regional and academic partners in Finland's Ostrobothnia region.
+For questions or support, update the contact information in the `pages/contact.php` file.
 
 ---
 
-© 2025 InnoWind. All rights reserved.
+© 2025 [PROJECT]. All rights reserved.
 

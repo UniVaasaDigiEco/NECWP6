@@ -1,6 +1,6 @@
 # Components
 
-This directory contains reusable PHP components that are included across multiple pages of the InnoWind website.
+This directory contains reusable PHP components that are included across multiple pages of the [PROJECT] website.
 
 ## Overview
 
@@ -16,7 +16,7 @@ The main navigation bar component used across all pages of the website.
 - Dropdown menus for content sections
 - Hover effects on desktop (min-width: 576px)
 - Mobile-friendly collapsed menu
-- Consistent branding with InnoWind logo
+- Consistent branding with [PROJECT] logo
 - Active page highlighting
 
 **Usage:**
@@ -182,5 +182,5 @@ Planned components for development:
 
 ---
 
-For more information about the InnoWind project, see the main [README.md](../README.md).
+For more information about the [PROJECT] project, see the main [README.md](../README.md).
 

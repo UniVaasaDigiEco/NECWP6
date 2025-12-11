@@ -7,7 +7,7 @@ $message_code = $_GET['error'] ?? '';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin Login - InnoWind</title>
+    <title>Admin Login - [PROJECT]</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="../css/bs-custom.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
@@ -51,7 +51,7 @@ $message_code = $_GET['error'] ?? '';
                         <div class="card-body p-5">
                             <!-- Logo Section -->
                             <div class="text-center mb-4">
-                                <img src="../images/logos/InnoWind_Astronaut_transparent_cropped.png" alt="InnoWind Icon" class="mb-3" style="height: 120px;">
+                                <img src="../images/logos/logo.png" alt="[PROJECT] Icon" class="mb-3" style="height: 120px;">
                                 <h2 class="fw-bold text-primary">Login</h2>
                                 <p class="text-muted">Please enter your credentials to access the admin panel</p>
                             </div>

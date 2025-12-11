@@ -16,7 +16,7 @@ Security::requireAuth('../login.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin Panel - InnoWind</title>
+    <title>Admin Panel - [PROJECT]</title>
     <link rel="icon" type="image/x-icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../css/bs-custom.css">
     <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
@@ -450,8 +450,8 @@ Security::requireAuth('../login.php');
     <main>
         <section id="headline">
             <div class="col-12 col-lg-8 offset-lg-2 px-4 pt-5 pb-3 text-center">
-                <h1 class="display-4 fw-bold">InnoWind -admin</h1>
-                <p class="lead fs-3 text-muted fw-semibold">Manage InnoWind site content.</p>
+                <h1 class="display-4 fw-bold">[PROJECT] Admin</h1>
+                <p class="lead fs-3 text-muted fw-semibold">Manage [PROJECT] site content.</p>
             </div>
         </section>
         <hr>

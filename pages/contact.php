@@ -32,7 +32,7 @@
                                 <!-- Image Column -->
                                 <div class="col-md-4 bg-primary bg-gradient d-flex align-items-center justify-content-center p-4">
                                     <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><rect fill='%23f3f4f6' width='100%' height='100%'/><g transform='translate(56 56)'><circle cx='200' cy='120' r='96' fill='%23ffe8d6'/><path d='M96 304c0-88 208-88 208 0v56H96z' fill='%2398c1d9'/><rect x='48' y='360' width='304' height='40' rx='20' fill='%2389a8be'/><ellipse cx='200' cy='120' rx='52' ry='32' fill='%23000000' opacity='0.08'/><g fill='none' stroke='%23000000' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'><path d='M164 112c6 6 18 6 24 0' /><path d='M236 112c6 6 18 6 24 0' /></g><circle cx='172' cy='116' r='8' fill='%23000000'/><circle cx='228' cy='116' r='8' fill='%23000000'/><path d='M168 152c10 10 32 10 42 0' stroke='%23000000' stroke-width='4' stroke-linecap='round' fill='none'/></g></svg>"
-                                         alt="Aino Koskinen"
+                                         alt="Project Coordinator"
                                          class="rounded-circle img-fluid"
                                          style="max-width: 200px; border: 5px solid white;">
                                 </div>
@@ -40,7 +40,7 @@
                                 <!-- Contact Details Column -->
                                 <div class="col-md-8">
                                     <div class="card-body p-4 p-lg-5">
-                                        <h3 class="card-title fw-bold mb-3">Aino Koskinen</h3>
+                                        <h3 class="card-title fw-bold mb-3">[Name]</h3>
                                         <p class="text-muted mb-4">Project Coordinator</p>
 
                                         <div class="contact-details pb-2">
@@ -51,7 +51,7 @@
                                                 </div>
                                                 <div>
                                                     <small class="text-muted d-block">Phone</small>
-                                                    <a href="tel:+358401234567" class="text-decoration-none text-dark fw-semibold">+358 40 123 4567</a>
+                                                    <a href="tel:+1234567890" class="text-decoration-none text-dark fw-semibold">+1 234 567 890</a>
                                                 </div>
                                             </div>
 
@@ -62,7 +62,7 @@
                                                 </div>
                                                 <div>
                                                     <small class="text-muted d-block">Email</small>
-                                                    <a href="mailto:aino.koskinen@example.com" class="text-decoration-none text-dark fw-semibold">aino.koskinen@example.com</a>
+                                                    <a href="mailto:contact@example.com" class="text-decoration-none text-dark fw-semibold">contact@example.com</a>
                                                 </div>
                                             </div>
 
@@ -73,7 +73,7 @@
                                                 </div>
                                                 <div>
                                                     <small class="text-muted d-block">Address</small>
-                                                    <p class="mb-0 text-dark fw-semibold">Kuutamontie 12 B<br>00100 Helsinki<br>Finland</p>
+                                                    <p class="mb-0 text-dark fw-semibold">123 Main Street<br>City, State 12345<br>Country</p>
                                                 </div>
                                             </div>
                                         </div>
